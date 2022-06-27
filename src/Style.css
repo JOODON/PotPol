@@ -1,7 +1,12 @@
 @charset "UTF-8";
+
 body{
-    background:white;
+    background-image:  url("파스텔 배경.jpg");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
 }
+
 h1{
     font-size: 50px;
     color:#EEE3F8;
@@ -13,6 +18,7 @@ h1{
     height: 320px;
     margin:0 auto;
     border-radius: 32px;
+    background: #f8f5f5;
 }
 
 header{
