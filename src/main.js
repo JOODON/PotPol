@@ -1,5 +1,13 @@
-const Hello=document.querySelector("h1");
-function Hello(){
-    Hello.style.color="red";
-}
-Hello.addEventListener("click",Hello)
+$(function (){
+    $(`.main`).click(function (){
+        $(`.Board`).css({display:`block`}),
+        $(`.h2`).css({display:`none`});
+    })
+})
+$(function (){
+    $(`.Search`).click(function (){
+        $(`.Board`).css({display:`none`},
+            $(`.h2`).css({display:`block`}));
+
+    })
+})
