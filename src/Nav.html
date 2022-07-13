@@ -37,14 +37,18 @@
       display: flex;
       justify-content: center;
       color: #ACABAB;
+      margin-top: 100px;
     }
     .texthead{
       display: flex;
       justify-content: center;
     }
     .texttitle{
-      width: 600px;
-      height: 30px;
+      width: 1200px;
+      height: 40px;
+      border: 3px solid #EEE3F8;
+      border-radius: 10px;
+      color: #ACABAB;
     }
     .textbody{
       display: flex;
@@ -52,11 +56,27 @@
       margin-top: 50px;
     }
     .textvalue{
-      width: 600px;
-      height: 200px;
+      width: 1200px;
+      height: 500px;
+      border: 3px solid #EEE3F8;
+      border-radius: 10px;
+      color: #ACABAB;
     }
     .Board{
       display: none;
+    }
+    .bt{
+      display: flex;
+      justify-content: center;
+    }
+    .sub-bt{
+      margin-top: 50px;
+      width: 1200px;
+      height: 50px;
+      background: white;
+      border: 3px solid #EEE3F8;
+      border-radius: 10px;
+      color: #ACABAB;
     }
   </style>
 </head>
@@ -64,8 +84,8 @@
 <div class="header">
   <a href="#" class="main"><i class="fa-solid fa-house-chimney"></i> Home</a>
   <a href="#" class="Search"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
-  <a href="#"><i class="fa-regular fa-address-book"></i> Contact</a>
-  <a href="#" ><i class="fa-regular fa-user"></i> login</a>
+  <a href="#" class="Contact"><i class="fa-regular fa-address-book"></i> Contact</a>
+  <a href="#" class="login"><i class="fa-regular fa-user"></i> login</a>
 </div>
 </nav>
 
@@ -81,7 +101,9 @@
     <div class="textbody">
 <textarea placeholder="게시글 " name="Hello" class="textvalue"></textarea>
     </div>
+  <div class="bt">
+    <button type="submit"class="sub-bt">제출하기</button>
+  </div>
 </div>
-<h2 class="h2">이거 되나</h2>
 </body>
 </html>
