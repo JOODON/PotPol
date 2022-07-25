@@ -2,117 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>게시글 목록</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
-    <style>
-        header{
-            border: solid 15px #EEE3F8;
-            border-radius: 17px;
-            height: 100px;
-        }
-        .header{
-            font-size: 50px;
-            display: flex;
-            margin-top:15px;
-            font-weight: 800;
-            list-style: none;
-            justify-content: center;
-        }
-        .title{
-            color: #EEE3F8;
-        }
-        .table{
-            display: flex;
-            justify-content: center;
-        }
-        .sotitle{
-            display: flex;
-            justify-content: center;
-            font-size: 28px;
-            font-weight: 900;
-            color: #EEE3F8;
-            margin-top: 10px;
-        }
-        table{
-            margin-top: 30px;
-            border-collapse: collapse;
-
-        }
-        td{
-            background: #EEE3F8;
-            border: solid 1px #EEE3F8;
-
-        }
-        th{
-            border-radius: 10px;
-            border: solid 3px #F7F8E3;
-            background:#F7F8E3;
-        }
-        .bt{
-            width: 100px;
-            height: 45px;
-            border-radius: 10px;
-            border:none;
-            background: #E3E7F8;
-        }
-        .bton{
-            display: flex;
-            justify-content: right;
-            margin-top: 20px;
-            margin-right: 330px;
-        }
-        bton{
-            text-underline:none;
-        }
-        p{
-            display: flex;
-            justify-content: center;
-        }
-        a{
-            text-decoration-line: none;
-        }
-        .container{
-            margin: auto;
-            margin-top: 100px;
-            border: 15px solid #F7F8E3;
-            height: 500px;
-            width: 830px;
-            border-radius: 20px;
-        }
-    </style>
+    <link href="Style1.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f696815b8c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <ul class="header">
-        <li class="title">LuLuLaLa게시판</li>
-        </ul>
-    </header>
-    <div class="container">
-    <div class="sotitle">
-        LULULALA
-    </div>
-    <div class="table">
-    <table border="1">
+<div class="header">
+    <a href="#" class="main"><i class="fa-solid fa-house-chimney"></i> Home</a>
+    <a href="#" class="Search"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+    <a href="#" class="Contact"><i class="fa-regular fa-address-book"></i> Contact</a>
+    <a href="#" class="login"><i class="fa-regular fa-user"></i> login</a>
+    <a href="#" class="login"> <i class="fa-regular fa-user"></i> Custom Join</a>
+</div>
 
-        <th width="100" height="30" >번호</th>
-        <th width="300">제목</th>
-        <th width="200">작성자</th>
-        <th width="200">작성일</th>
-
-        <tr>
-            <td class="td1" width="100"><p>1</p></td>
-            <td height="40" width="300" class="td2"><p>자기 소개 글</p></td>
-            <td class="td3" width="200"><p>주동호</p></td>
-            <td class="td4" width="200"><p>2022.06.27</p></td>
-        </tr>
-    </table>
+<h1>게시판 글 목록</h1>
+<div class="container">
+    <div class="row">
+        <table border="1px">
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>작성자</th>
+                    <th>작성일</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>안녕하세요</td>
+                    <td>주동호</td>
+                    <td>2022.07.25</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="write_bt">
+        <button><a href="#"class="btn">글쓰기</a></button>
+        </div>
     </div>
-    </div>
-        <a class="bton" href="#">
-            <input class="bt" type="submit" value="글쓰기"/>
-        </a>
+</div>
 
 </body>
 </html>

@@ -1,37 +1,73 @@
-<!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
-    <meta http-equiv="Content-Type" contant="text/html"; charset="UTF-8">
-    <meta name="viewport" content="width=device-width",initial-scale="1">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="Style.css">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+    </script>
     <script src="https://kit.fontawesome.com/f696815b8c.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
     <title>로그인 페이지</title>
 </head>
 <body>
-<header>
-    <h1>LuLuLaLa</h1>
-</header>
-<div class="container">
+<section class="login-form">
+    <h1>Custom Join</h1>
+    <form action=" ">
 
-    <div class="idbox">
-        <i id="id" class="fa-regular fa-user"></i>
-        <input class="id" type="text">
+        <div class="int-area">
+            <input type="text" name="id" id="id" autocapitalize="off" required>
+            <label for="id">USERID</label>
+        </div>
+
+        <div class="int-area">
+            <input type="password" name="pw" id="pw" autocapitalize="off" required>
+            <label for="pw">USERPASSWORD</label>
+        </div>
+            <div class="int-area">
+                <input type="text" name="id" id="name" autocapitalize="off" required>
+                <label for="id">USERNAME</label>
+            </div>
+            <div class="int-area">
+                <input type="password" name="pw" id="Gender" autocapitalize="off" required>
+                <label for="pw">USERGender</label>
+            </div>
+            <div class="int-area">
+                <input type="password" name="pw" id="E_m" autocapitalize="off" required>
+                <label for="pw">USERE-mail</label>
+            </div>
+            <div class="btn-area">
+            <button type="submit" id="btn">Join</button>
+        </div>
+    </form>
+    <div class="caption">
+        <a href="">Forgot Password?</a>
     </div>
-    <div class="passwardbox">
-        <i id="pass" class="fa-solid fa-lock"></i>
-        <input class="passward" type="text">
-    </div>
-    <div class="loginbt">
-        <input class="push" type="button" value="로그인" >
-    </div>
-    <div class="buttom">
-        <p class="Findps">비밀번호 찾기</p>
-        <p class="Findid">아이디 찾기</p>
-        <p class="join">회원가입</p>
-    </div>
-</div>
+</section>
+
+
+<script>
+    let id=$(`#id`);
+    let pw=$('#pw');
+    let btn=$('#btn');
+
+    $(btn).on("click", function (){
+        if($(id).val()==""){
+            $(id).next("label").addClass('warning');
+            setTimeout(function () {
+                $('label').removeClass(`warning`);
+            },1500)
+        }
+        else if($(pw).val()==""){
+            $(pw).next("label").addClass('warning');
+            setTimeout(function (){
+                $('label').removeClass(`warning`);
+            },1500)
+        }
+    })
+</script>
 </body>
 </html>
