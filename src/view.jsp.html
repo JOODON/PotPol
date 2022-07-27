@@ -1,114 +1,51 @@
-
-
 <html>
 <head>
-    <title>게시판 글쓰기</title>
+    <title>게시판 글보기</title>
     <meta http-equiv="Content-Type" contant="text/html"; charset="UTF-8">
     <meta name="viewport" content="width=device-width",initial-scale="1">
-    <style>
-        body{
-            background:url("../../LuLuLaLa_Project/src/main/webapp/img/게시판 메인배경.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        h1{
-            margin-top: 30px;
-            display: flex;
-            justify-content: center;
-            color: #EEE3F8;
-            font-size: 40px;
-        }
-        .container{
-            border: 5px solid #efe9af;
-            border-radius: 10px;
-            width: 800px;
-            height: 850px;
-            margin: auto;
-            background: #fcf2ff;
-        }
-        .texthead{
-            border: 3px solid #EEE3F8;
-            width: 700px;
-            display: flex;
-            justify-content: space-between;
-            margin: auto;
-
-            margin-top: 40px;
-        }
-        p{
-            margin-top: 20px;
-            font-size: 14px;
-            color: #ACABAB;
-        }
-        .textbody{
-            width: 700px;
-            height: 600px;
-
-            margin: auto;
-            border-radius: 10px;
-            margin-top: 70px;
-        }
-        .titlehead{
-            display: flex;
-            justify-content: center;
-            border-radius: 10px;
-            border: 3px solid #EEE3F8;
-
-        }
-        .titlebody{
-            display: flex;
-            justify-content: center;
-            border: 3px solid #f3f1ac;
-            border-radius: 10px;
-            height: 500px;
-            margin-top: 10px;
-        }
-        a{
-            text-decoration-line: none;
-            color: #ACABAB;
-        }
-        .button{
-            width: 400px;
-            display: flex;
-            justify-content:space-between;
-            margin: auto;
-            margin-top: -50px;
-        }
-    </style>
+    <link rel="stylesheet" href="Style3.css">
+    <script src="https://kit.fontawesome.com/f696815b8c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-
+<div class="header">
+    <a href="#" class="main"><i class="fa-solid fa-house-chimney"></i> Home</a>
+    <a href="#" class="Search"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+    <a href="#" class="Contact"><i class="fa-regular fa-address-book"></i> Contact</a>
+    <a href="#" class="login"><i class="fa-regular fa-user"></i> login</a>
+    <a href="#" class="login"> <i class="fa-regular fa-user"></i> Custom Join</a>
+</div>
     <header>
         <h1>게시판 글보기</h1>
     </header>
-    <div class="container">
-        <div class="texthead">
-        <h3>글 제목</h3>
-        <P>이거 수정 가능한굥</p>
-
-        <h3 class="textuser">작성자</h3>
-        <p>dongho</p>
-
-        <h3 >작성 일자</h3>
-        <p>2022-07-02 09시48분</p>
-
-        </div>
-        <div class="textbody">
-            <div class="titlehead">
-        <h3>내용</h3>
-        </div>
-            <div class="titlebody">
-        <p>33333333333</p>
-            </div>
-        </div>
-    </div>
-    <div class="button">
-    <a href="main.jsp"> 목록 </a>
-
-    <a href="#>" > 수정</a>
-    <a href="#>" > 삭제</a>
+<div class="container">
+    <table border="1px">
+        <thead class="thead1">
+            <th>글 제목</th>
+            <td colspan="2">본문 내용</td>
+        </thead>
+        <thead>
+            <th>작성자</th>
+            <td colspan="2">본문 내용</td>
+        </thead>
+        <thead>
+        <th>작성 일자</th>
+        <td>본문 내용</td>
+        </thead>
+        <thead>
+        <th>내용</th>
+        <td class="last">본문 내용</td>
+        </thead>
+    </table>
+    <div class="bt">
+    <button class="bt1">목록</button>
+    <button class="bt2">수정</button>
+    <button class="bt3">삭제</button>
     </div>
 </div>
+
+
+
+
+
 </body>
 </html>

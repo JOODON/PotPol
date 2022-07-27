@@ -3,77 +3,34 @@
     <title>게시판 글쓰기</title>
     <meta http-equiv="Content-Type" contant="text/html"; charset="UTF-8">
     <meta name="viewport" content="width=device-width",initial-scale="1">
+    <script src="https://kit.fontawesome.com/f696815b8c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Style2.css">
 </head>
 <style>
-    body{
-        background:url("../../LuLuLaLa_Project/src/main/webapp/img/게시판 메인배경.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    h1{
-        display: flex;
-        justify-content: center;
-        color: #EEE3F8;
-    }
-    .title{
-        display: flex;
-        justify-content: center;
-    }
-    .text{
-        display: flex;
-        justify-content: center;
-    }
-    .bt{
-        display: flex;
-        justify-content: center;
-    }
-    .texthead{
-        margin-top: 30px;
-        width: 800px;
-        height: 50px;
-        border-radius: 3px;
-        border: 5px solid #F7F8E3;
 
-    }
-    .textbody{
-        width: 800px;
-        height: 600px;
-        margin-top: 30px;
-        border-radius: 3px;
-        border: 5px solid #F7F8E3;
-    }
-    .container{
-        border: 6px solid #d6d2ee;
-        width: 830px;
-        margin: auto;
-        border-radius: 10px;
-        margin-top: 60px;
-        background: #ffffff;
-    }
-    .bt{
-
-        margin-top: 10px;
-    }
-    .buttom{
-        width: 800px;
-        border: 3px solid #ccc8ee;
-        background:#ffffff;
-    }
 </style>
 <body>
-<div class="container">
+<div class="header">
+    <a href="#" class="main"><i class="fa-solid fa-house-chimney"></i> Home</a>
+    <a href="#" class="Search"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+    <a href="#" class="Contact"><i class="fa-regular fa-address-book"></i> Contact</a>
+    <a href="#" class="login"><i class="fa-regular fa-user"></i> login</a>
+    <a href="#" class="login"> <i class="fa-regular fa-user"></i> Custom Join</a>
+</div>
+
+<div class="container" style="height: 130%">
     <header>
         <h1>게시판 글쓰기 양식</h1>
     </header>
     <form>
         <div class="title">
-            <input type="text" name="usertitle" class="texthead" placeholder="글내용" >
+            <input type="text" name="usertitle" class="texthead" placeholder="글 제목">
         </div>
         <div class="text">
             <textarea type="text" name="usertext" class="textbody" placeholder="글 내용"></textarea>
         </div>
         <div class="bt">
-            <input class="buttom" type="submit" value="글쓰기"/>
+            <button class="buttom" type="submit">글쓰기</button>
         </div>
     </form>
 </div>
