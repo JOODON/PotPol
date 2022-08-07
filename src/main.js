@@ -10,6 +10,11 @@ $(function (){
     })
 })
 
+
+
+
+
+
 let curPos=0; //현재 보여주는 이미지의 인덱스 번호
 let positionValue= 0;//위치이동
 const img_width=1280;
