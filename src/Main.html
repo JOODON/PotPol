@@ -1,0 +1,97 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/f696815b8c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <title>메인 페이지</title>
+    <style>
+        .dropbtn{
+            color: #363333;
+            padding: 16px;
+            border: none;
+            background: #D3D3D3;
+            font-size: 16px;
+            color: #383333;
+            font-family: 'Jua', sans-serif;
+            width: 100%;
+            height: 10%;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            font-family: 'Jua', sans-serif;
+        }
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: #383333;
+        }
+        .dropdown:hover .dropdown-content {display: block;}
+        .header{
+            display: flex;
+            justify-content:left;
+            width: 100%;
+            height: 10%;
+            background: #D3D3D3;
+            font-family: 'Jua', sans-serif;
+        }
+        .main-title{
+            padding-top: 1.2%;
+            padding-left: 3%;
+            color: #383333;
+            width: 5%;
+            height: 10%;
+        }
+        .dropdown{
+            padding-left: 1%;
+        }
+        .search{
+            margin-left: 50%;
+            padding-top: 1.5%;
+        }
+        .search input{
+            height: 50%;
+            color: #383333;
+        }
+        .search .text{
+            width: 75%;
+            color: #383333;
+        }
+        h1{
+            color: #383333;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1><i class="fa-solid fa-building-columns"></i> 강의 평가 웹 사이트</h1>
+    <h3 class="main-title">메인</h3>
+    <div class="dropdown">
+        <button class="dropbtn"><h3>회원 관리  <i class="fa-solid fa-angle-down"></i></h3></button>
+        <div class="dropdown-content">
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+            <a href="#">로그아웃</a>
+        </div>
+    </div>
+    <div class="search">
+        <input class="text" type="text" placeholder="내용을 입력하세요.">
+        <input type="submit" value="검색">
+    </div>
+</div>
+</body>
+</html>
