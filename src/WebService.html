@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" type="text/css" href="CSS/header.css">
+    <title>Header</title>
+    <script src="https://kit.fontawesome.com/fa77013e69.js" crossorigin="anonymous"></script>
+    <script src="JS/header.js" defer></script>
+</head>
+<style>
+    header{
+        margin:20px;
+    }
+    body{
+        font-family: 'Source Sans Pro'
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar__menu {
+        display: flex;
+        list-style:none;
+        padding-left: 0;
+    }
+    .navbar__menu li {
+        padding: 8px 12px;
+    }
+
+    .navbar__menu li:hover {
+        background-color: #CEBABA;
+        border-radius: 4px;
+    }
+
+    .navbar__toogleBtn {
+        display: none;
+        position: absolute;
+        right: 32px;
+        font-size: 24px;
+        color: #CEBABA;
+    }
+
+    @media screen and (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            padding: 8px 24px;
+        }
+
+        .navbar__menu {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .navbar__menu li{
+            width: 100%;
+            text-align: center;
+            margin: 3px;
+        }
+
+        .navbar__toogleBtn {
+            display: block;
+        }
+
+        .navbar__menu.active{
+            display: flex;
+        }
+    }
+</style>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <a href="index.jsp"><img src='CSS/FMlogo.png'></a>
+        </div>
+
+        <ul class="navbar__menu">
+            <li><a href="#">Become An Artist</a></li>
+            <li><a href="Account/signup.jsp">Join</a></li>  <!-- 각 기능이 있는 파일 링크 걸기 -->
+            <li><a href="Account/login.jsp">Login</a>  </li>
+
+            <li><a href="#">Become An Artist</a></li>
+            <li><a href="mypage.jsp">My Page</a></li>
+            <li><a href="cart.jsp">Cart</a></li>
+            <li><a href="Account/logout.jsp">Logout</a></li>
+
+            <li><a href="#">Become An Artist</a></li>
+            <li><a href="mypage_admin.jsp">My Page</a></li>
+            <li><a href="Account/logout.jsp">Logout</a></li>
+
+        </ul>
+        <a href="#" class="navbar__toogleBtn">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </nav>
+</header>
+<hr style="width: 80%;margin: 0 auto;">
+
+<div style="width: 80%; margin: 0 auto; margin-top:1%">
+    <button onclick="select()" style="border: none; background-color: white"><i class="fa-solid fa-arrow-down-wide-short"></i></button>
+</div>
+
+<form>
+    <div style="display:none; width: 80%; margin: 0 auto" class="select-form">
+        <select name="search" class="id" style="background-color: #524d4d;color: white ;border-radius: 4px; height: 20px">
+            <option value="안녕하세요">안녕하세요</option>
+            <option value="ㅁㅁㅁㅁㅁ">ㅁㅁㅁㅁㅁ</option>
+            <option value="dongho">dongho</option>
+        </select>
+        <button type="submit" style="border: none; background-color: #524d4d;color: white;border-radius: 4px">정렬</button>
+    </div>
+</form>
+<audio></audio>
+<ul>
+    <li style="width: 85%;margin: 0 auto; display:flex; border: 1px solid" >
+        <img src="#" width="100px"height="100px" onclick="playMusic()">
+        <p style="margin-left:2%">Music Title <br> cornposer name</p>
+        <p style="margin-left:20%;padding-top: 1%">Happy Hopeful</p>
+        <p style="margin-left:20%;padding-top: 1% " >008BPM</p>
+        <p style="margin-left:2%; padding-top: 1%">0:00</p>
+        <i class="fa-solid fa-cart-shopping" style="margin-left:10%;padding-top: 2%; font-size: 22px"></i>
+        <i class="fa-regular fa-heart" style="margin-left:1%;padding-top: 2%; font-size: 22px"></i>
+        <i class="fa-solid fa-plus" style="margin-left:1%;padding-top: 2%; font-size: 22px"></i>
+        <i class="fa-solid fa-arrow-down"style="margin-left:1%;padding-top: 2%; font-size: 22px"></i>
+    </li>
+</ul>
+<script>
+
+</script>
+
+<audio id="player" src=Drinks.mp3></audio>
+<div class="playController" style="background-color: gray; display: none; width: 80%; height: 100px; position: absolute; top: 80%;left: 10%" >
+    <button style="border: none; background-color: gray; " onclick="document.getElementById('player').play()"><i class="fa-solid fa-play"></i></button>
+    <button style="border: none; background-color: gray;" onclick="document.getElementById('player').pause()"><i class="fa-solid fa-stop"></i></button>
+    <button style="border: none; background-color: gray;" onclick="document.getElementById('player').volume += 0.1">Vol +</button>
+    <button style="border: none; background-color: gray;" onclick="document.getElementById('player').volume -= 0.1">Vol -</button>
+</div>
+
+<script>
+    let onSelect=document.querySelector(".select-form");
+    let audioBox=document.querySelector(".playController");
+    console.log(audioBox);
+    console.log(audioBox);
+    let result=0;
+    function select(){
+        result++;
+        if(result % 2===0){
+            onSelect.style.display=`block`;
+        }
+        else {
+            onSelect.style.display=`none`;
+        }
+    }
+
+    function playMusic(){
+        audioBox.style.display=`block`;
+    }
+
+</script>
+</body>
+</html>

@@ -141,24 +141,18 @@
 
 
   let posisonValue=0;
-  const IMAGE_WIDTH=920;
+  const IMAGE_WIDTH=990;
 
-  const nBt = document.querySelector(".next");
-  const pBt = document.querySelector(".prev");
   const move = document.querySelector("main .move");
 
   function next(){
-      pBt.removeAttribute('disabled')
       posisonValue -= IMAGE_WIDTH;
       move.style.transform = `translateX(${posisonValue}px)`;
   }
   function prev(){
-    pBt.removeAttribute('disabled')
     posisonValue += IMAGE_WIDTH;
     move.style.transform = `translateX(${posisonValue}px)`;
   }
-
-
 
 </script>
 </body>
