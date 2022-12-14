@@ -140,6 +140,15 @@
     <button style="border: none; background-color: gray;" onclick="document.getElementById('player').volume -= 0.1">Vol -</button>
 </div>
 
+
+<audio id="player1" src=Drinks.mp3 onclick="this.src='Funny and Cute music _ Cloud.mp3'"></audio>
+<div class="playController" style="background-color: gray; display: none; width: 80%; height: 100px; position: absolute; top: 80%;left: 10%" >
+    <button style="border: none; background-color: gray; " onclick="document.getElementById('player1').play()"><i class="fa-solid fa-play"></i></button>
+    <button style="border: none; background-color: gray;" onclick="document.getElementById('player1').pause()"><i class="fa-solid fa-stop"></i></button>
+    <button style="border: none; background-color: gray;" onclick="document.getElementById('player1').volume += 0.1">Vol +</button>
+    <button style="border: none; background-color: gray;" onclick="document.getElementById('player1').volume -= 0.1">Vol -</button>
+</div>
+
 <script>
     let onSelect=document.querySelector(".select-form");
     let audioBox=document.querySelector(".playController");
