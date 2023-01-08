@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: white;
+        }
+        h1{
+            color: rgba(62, 178, 189, 0.4);
+            font-family: 'Black Han Sans', sans-serif;
+        }
+        #container{
+            width: 80%;
+            height: 100%;
+            margin:  auto;
+        }
+        header{
+            display: flex;
+            justify-content: center;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            margin-right: 20%;
+        }
+        input{
+            width: 210%;
+            height: 6%;
+            border-radius: 10px;
+            border:1px solid lightpink;
+        }
+        h5{
+            display: flex;
+            justify-content: center;
+            font-size: 15px;
+            margin-left: 150px;
+            width: 50%;
+            font-family: 'Black Han Sans', sans-serif;
+        }
+        button{
+            width: 210%;
+            height: 6%;
+            margin-top: 10px;
+            margin-right: 20%;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <header>
+        <h1>회원 등록 페이지</h1>
+    </header>
+    <main>
+    <form>
+        <h5>이름</h5>
+        <input type="text" placeholder="name">
+        <h5>나이</h5>
+        <input type="text" placeholder="age">
+        <h5>성별</h5>
+        <input type="text" placeholder="Gender">
+        <h5>전화번호</h5>
+        <input type="text" placeholder="PhoneNumber">
+        <h5>기타</h5>
+        <input type="text" placeholder="etc">
+        <br>
+        <button type="submit">제출하기</button>
+    </form>
+    </main>
+</div>
+</body>
+</html>
