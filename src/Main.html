@@ -1,409 +1,129 @@
-<html>
+<!DOCTYPE html>
+<!--/문서는 00이니깐 잘 처리해줘-->
+<html lang="en">
+<!--문서 유형을 지정한 후 실제 문서가 시작되고 끝나는것을 나타낸 태그-->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/f696815b8c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Jua:400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Rubik:wght@500&display=swap" rel="stylesheet">
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <title>메인 페이지</title>
-    <style>
-        *{
-            background:#FFE6E6;
-        }
-        .header{
-            background:#FFE6E6;
-            overflow: hidden;
-            margin-left: 5%;
-        }
-        .header-title{
-            margin-top: 5%;
-            font-size: 24px;
-            color: #464646;
-            font-family: 'Rubik', sans-serif;
-
-        }
-        .header-nav{
-            margin-top: -90px;
-            margin-right: 5%;
-            display: flex;
-            justify-content: right;
-        }
-        .header a{
-            float: left;
-            color: #FF5675;
-            text-align: center;
-            text-decoration: none;
-            padding: 14px 16px;
-            font-size: 18px;
-            font-family: 'Rubik', sans-serif;
-
-        }
-        .topnav a:hover {
-            background-color: #e5d4a0;
-            color: black;
-        }
-
-        .main-page{
-            margin-top: 100px;
-            background-image: url(workplace-2303851_1920.jpg);
-            background-size: cover;
-            width: 100%;
-            height: 720px;
-        }
-        .main-page h1{
-            font-size: 50px;
-            color: #464646;
-            width: 300px;
-            background: rgb(236,207,209);
-            font-family: 'Rubik', sans-serif;
-            padding-left: 10%;
-            padding-top: 8%;
-        }
-        .main-page p{
-            font-size: 30px;
-            font-family: 'Cute Font', cursive;
-            width: 500px;
-            background: rgb(236,207,209);
-            padding-left: 10%;
-            color: #FF5675;
-        }
-        .main-page button{
-            font-family: 'Cute Font', cursive;
-            border: 1px solid #FF5675;
-            width: 7%;
-            height: 30px;
-            border-radius: 30px;
-        }
-        .main-page .Writing,.main-page .Reading{
-            background: #eee8e8;
-        }
-        .main-page a{
-            text-decoration: none;
-            color: #FF5675;
-            background: #eee8e8;
-        }
-        .bt{
-            margin-left: 10%;
-            background: rgb(236,207,209);
-        }
-        .sub-page{
-            margin-top: 10%;
-        }
-        .sub-page-main{
-            display: flex;
-            justify-content: center;
-        }
-        .sub-page-header{
-            text-align: center;
-            font-family: 'Cute Font', cursive;
-        }
-        .sub-page-header h1{
-            font-size: 50px;
-            color: #464646;
-        }
-        .sub-page-header h3{
-            font-size: 24px;
-            color: #464646;
-        }
-        .sub-page1,.sub-page2,.sub-page3{
-            width: 20%;
-            text-align: center;
-            font-family: 'Cute Font', cursive;
-            padding-top: 1%;
-        }
-        h4{
-            font-size: 18px;
-        }
-        p{
-            color: #FF5675;
-            font-family: 'Cute Font', cursive;
-        }
-        .FAQ{
-            margin-top:10% ;
-            text-align: center;
-        }
-        .FAQ h1{
-            color: #464646;
-            font-family: 'Rubik', sans-serif;
-        }
-        .FAQ h3{
-            font-family: 'Cute Font', cursive;
-            color: #464646;
-            font-size: 24px;
-        }
-        .FAQ button{
-            border: none;
-        }
-        .FAQ{
-            height: 60%;
-        }
-        .bottom-nav-top{
-            display: flex;
-            justify-content: left;
-            font-family: 'Cute Font', cursive;
-            color: #FF5675;
-            text-align: left;
-            margin-right:30%;
-            margin-top: 10%;
-        }
-        .line{
-            border-bottom: 1px solid #464343;
-            width: 60%;
-            margin: auto;
-        }
-        .bottom-nav-bot{
-            display: flex;
-            justify-content: space-between;
-            width: 60%;
-            margin: auto;
-            font-family: 'Cute Font', cursive;
-            color: #FF5675;
-        }
-        .bottom-nav-top .Pes-info, .bottom-nav-top .Call{
-            margin-left: 7%;
-        }
-        .faq1text,.faq2text,.faq3text{
-            display: none;
-        }
-
-    </style>
+    <!--화면에는 보이지 않지만 웹 브라우저가 알아야할 정보들은 모두 태그에 들어감-->
+    <meta charset="utf-8">
+    <!--문자 및 인코딩 문서 키워 등에 대학 요약 정보 기입 태그-->
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="JOODONGHO" content="코딩">
+    <!--사용자의 품질을 올리기위해서 공부해야되는 태그-->
+    <link href="./2233039.CSS" rel="stylesheet">
+    <!--css와 연결-->
+    <title>1주차 실습과제</title>
+    <!--문서의 제목을 나타낸다-->
 </head>
+
 <body>
-<div class="header">
-    <div class="header-title">
-        <h1 class="maintitle">Meno Meno   <i class="fa-solid fa-book-open"></i>  </h1>
-    </div>
-    <div class="header-nav">
-        <a href="#" class="main"><i class="fa-solid fa-house-chimney"></i> Home</a>
-        <a href="#" class="Search"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
-        <a href="#" class="Contact"><i class="fa-regular fa-address-book"></i> Contact</a>
-        <a href="#" class="login"><i class="fa-regular fa-user"></i> login</a>
-        <a href="#" class="Custom"> <i class="fa-regular fa-user"></i> Custom Join</a>
-    </div>
+<!--실제 브라우저에 들어갈 내용들-->
+<div class="top">
+    <h1>1주차 실습과제</h1>
 </div>
-
-<div class="main-page">
-    <h1>Meno Meno</h1>
-    <p>당신의 오늘 하루 있었던 일을 기록해보세요</p>
-    <p>소중한 추억들을 공유하고 공감하고</p>
-    <span class="bt">
-    <button class="Reading"><a class="Readinglink" href="#">글목록 보러 가기</a></button>
-    <button class="Writing"><a class="Writinglink" href="#">글 쓰러 가기</a></button>
-    </span>
+<hr>
+<!--이미지-->
+<div class=사진>
+    <img src="C:\Users\주동호\OneDrive\바탕 화면\HTML\자기소개 홈페이지\귀요미사진.jpg"width="300px" height="450px" align="left">
+    <!--이미지 표기의 크기-->
+    <p>이름:<strong>주동호</strong></p>
+    <!--한줄쓰기 -->
+    <p>나이:<strong>22살</strong></p>
+    <p>학번:<strong>2233039</strong></p>
+    <p>전화번호:<strong>010-7761-8482</strong></p>
+    <p>MBTI:<strong>ENTJ</strong></p>
+    <p>혈액형:<strong>O형</strong></p>
+    <p>키:<strong>173cm</strong></p>
+    <p>소속대학:<strong><mark>부천대학교<mark></strong></p>
+    <p>저는 <strong>2001년 10월 30일</strong> 인천에서 태어났습니다.</p>
+    <p>제 취미는 <mark>음악 듣는것이며</mark>좋아하는 장르는<strong>힙합 발라드 좋아합니다.</strong></p>
 </div>
-
-<div class="sub-page">
-    <div class="sub-page-header">
-        <h1>무엇을 할수 있나요?</h1>
-        <h3>이 페이지에서 할수 있는 것</h3>
-    </div>
-    <div class="sub-page-main">
-        <div class="sub-page1">
-            <h4><i class="fa-solid fa-pen"></i>  자신의 추억들을 작성할수 있어요  <i class="fa-solid fa-pen"></i></h4>
-            <p>당신의 추억들을 하나하나 작성해 보세요<br>
-                행복했던 기억들 슬펐던 기억들을 적으면서<br>
-                자신의 소중 했던 추억을 떠 올려 보세요</p>
-        </div>
-        <div class="sub-page2">
-            <h4><i class="fa-solid fa-comments"></i>  사람들과 소통할수 있어요  <i class="fa-solid fa-comments"></i></h4>
-            <p>당신의 소중한 추억을 사람들과 공유하고<br>
-                다양한 사람들의 추억을 보고 생각하며<br>
-                공감과 위로 축하의 말들을 전하세요</p>
-        </div>
-        <div class="sub-page3">
-            <h4><i class="fa-solid fa-pager"></i>  자신만의 페이지를 꾸밀수 있어요  <i class="fa-solid fa-pager"></i></h4>
-            <p>자신의 감성으로 자신의 페이지를 꾸며보세요<br>
-                자신의 감성을로 만든 페이지를 자랑하고 <br>
-                다른사람들의 페이지를 확인해보세요</p>
-        </div>
-    </div>
+<br>
+<br>
+<br>
+<div class="목차">
+    <h3><mark>목차</mark><h3>
 </div>
-<div class="FAQ">
-    <div class="faq1">
-        <h1> <i class="fa-regular fa-circle-question"></i>  FAQ  <i class="fa-regular fa-circle-question"></i></h1>
-        <h3><button class="question1"><i class="fa-solid fa-angle-down"></i></button>  중복하여 아이디를 가입 할수 있나요?</h3>
-        <p class="faq1text">중복 아이디 가입은 가능합니다 하지만 중복한 계정 글로 <br>게시판 테러 및 무분별한 악성 댓글시 추방 조치가 될수 있습니다</p>
-    </div>
-    <div class="faq2">
-        <h3><button class="question2"><i class="fa-solid fa-angle-down"></i></button>  다른 사람들과 소통하는 방법이 따로 있나요?</h3>
-        <P class="faq2text">일반 게시판 처럼 다른 사람들의 글을 잃고 공감되는 부분이<br> 있으면 공감 부분 그리고 댓글 달기 기능 등을 지원 하고 있습니다.</P>
-    </div>
-    <div class="faq3">
-        <h3><button class="question3"><i class="fa-solid fa-angle-down"></i></button>  특정한 사람의 게시글만 찾아 볼수 있나요?</h3>
-        <p class="faq3text">아직까지는 기능을 구현 하지 못했으나 사용자가 많아 질 경우<br>특정한 사람의 게시글만 찾아보는 기능을 넣어볼 생각입니다</p>
-    </div>
+<div class="목차내용">
+    <ol>
+        <li><a href="#admin">동아리 운영진</a></li>
+        <!--문장-->
+        <li><a href="#user">팀원</a></li>
+        <li><a href=#link>링크이동</a></li>
+        <li><a href="#sosa">소사캠퍼스 앱</a></li>
+    </ol>
+    <!--숫자로 목록표시-->
 </div>
-<div class="line">
-    <div class="bottom-nav-top">
-        <h4>이용 약간</h4>
-        <h4 class="Pes-info">개인정보 처리 방침</h4>
-        <h4 class="Call">연락</h4>
-    </div>
+<div class="운영진">
+    <h3 id="admin">동아리 운영진<h3>
+        <table class="a">
+            <tr>
+                <td>3학년</td>
+                <td>이승현</td>
+            </tr>
+            <tr>
+                <td>3학년</td>
+                <td>최강헌</td>
+            </tr>
+            <tr>
+                <td>2학년</td>
+                <td>김민지</td>
+            </tr>
+            <tr>
+                <td>2학년</td>
+                <td>김수빈</td>
+            </tr>
+            <tr>
+                <td>2학년</td>
+                <td>김수임</td>
+            </tr>
+        </table>
 </div>
-
-<div class="bottom-nav-bot">
-    <h4>032-000-1111</h4>
-    <h4>Meno Meno</h4>
+<br>
+<br>
+<div class="팀원">
+    <h3 id="user">동아리 팀원<h3>
+        <table class="ab">
+            <tr>
+                <td>1학년</td>
+                <td>주동호</td>
+            </tr>
+            <tr>
+                <td>1학년</td>
+                <td>김보영</td>
+            </tr>
+            <tr>
+                <td>1학년</td>
+                <td>김학민</td>
+            </tr>
+            <tr>
+                <td>1학년</td>
+                <td>성우석</td>
+            </tr>
+            <tr>
+                <td>1학년</td>
+                <td>박태양</td>
+            </tr>
+        </table>
 </div>
-<script>
-    let mainHead=document.querySelector(`.maintitle`);
-    let navmain=document.querySelector(`.main`);
-    let navSeqrch=document.querySelector(`.Search`);
-    let navContact=document.querySelector(`.Contact`);
-    let navlogin=document.querySelector(`.login`);
-    let navjoin=document.querySelector(`.Custom`);
-
-    let Qusbt1=document.querySelector(`.question1`);
-    let Qusti1=document.querySelector(`.faq1text`);
-    let Qusbt2=document.querySelector(`.question2`);
-    let Qusti2=document.querySelector(`.faq2text`);
-    let Qusbt3=document.querySelector(`.question3`);
-    let Qusti3=document.querySelector(`.faq3text`);
-
-    let Read=document.querySelector(`.Reading`);
-    let Write=document.querySelector(`.Writing`);
-
-    let Readlink=document.querySelector(`.Readinglink`);
-    let Writelink=document.querySelector(`.Writinglink`);
-
-    let bc=0;
-    const mouseover=function (title){
-        title.style.color=`#FF5675`;
-    }
-    const mouseout=function (title){
-        title.style.color=`#464646`;
-    }
-    //마우스 올리면 제목 색상 변경
-    mainHead.addEventListener(`mouseover`,function (){
-        mouseover(mainHead);
-    });
-
-    mainHead.addEventListener(`mouseout`,function (){
-        mouseout(mainHead);
-    })
-
-    //네비게이션도 똑같이
-    navmain.addEventListener(`mouseover`,function (){
-        mouseout(navmain);
-    })
-    navmain.addEventListener(`mouseout`,function (){
-        mouseover(navmain);
-    })
-    navSeqrch.addEventListener(`mouseover`,function (){
-        mouseout(navSeqrch);
-    })
-    navSeqrch.addEventListener(`mouseout`,function (){
-        mouseover(navSeqrch);
-    })
-    navContact.addEventListener(`mouseover`,function (){
-        mouseout(navContact);
-    })
-    navContact.addEventListener(`mouseout`,function (){
-        mouseover(navContact);
-    })
-    navlogin.addEventListener(`mouseover`,function (){
-        mouseout(navlogin);
-    })
-    navlogin.addEventListener(`mouseout`,function (){
-        mouseover(navlogin);
-    })
-    navjoin.addEventListener(`mouseover`,function (){
-        mouseout(navjoin);
-    })
-    navjoin.addEventListener(`mouseout`,function (){
-        mouseover(navjoin);
-    })
-
-    Qusbt1.addEventListener(`click`,function (){
-        bc += 1;
-        console.log(bc);
-        if (bc%2 !== 0){
-            Qusti1.style.display=`block`;
-            Qusbt1.style.color=`#FF5675`;
-        }
-        else {
-            Qusti1.style.display=`none`;
-        }
-    })
-    Qusbt1.addEventListener(`mouseover`,function (){
-        Qusbt1.style.color=`#FF5675`
-    })
-
-    Qusbt1.addEventListener(`mouseout`,function (){
-        Qusbt1.style.color=`#464646`
-    })
-
-    Qusbt2.addEventListener(`click`,function (){
-        bc += 1;
-        console.log(bc);
-        if (bc%2 !== 0){
-            Qusti2.style.display=`block`;
-            Qusbt2.style.color=`#FF5675`;
-        }
-        else {
-            Qusti2.style.display=`none`;
-        }
-    })
-    Qusbt2.addEventListener(`mouseover`,function (){
-        Qusbt2.style.color=`#FF5675`
-    })
-
-    Qusbt2.addEventListener(`mouseout`,function (){
-        Qusbt2.style.color=`#464646`
-    })
-
-    Qusbt3.addEventListener(`click`,function (){
-        bc += 1;
-        console.log(bc);
-        if (bc%2 !== 0){
-            Qusti3.style.display=`block`;
-            Qusbt3.style.color=`#FF5675`;
-        }
-        else {
-            Qusti3.style.display=`none`;
-        }
-    })
-    Qusbt3.addEventListener(`mouseover`,function (){
-        Qusbt3.style.color=`#FF5675`;
-    })
-
-    Qusbt3.addEventListener(`mouseout`,function (){
-        Qusbt3.style.color=`#464646`;
-    })
-
-    Read.addEventListener(`mouseover`,function (){
-        Read.style.backgroundColor=`#FF5675`;
-        Readlink.style.backgroundColor=`#FF5675`;
-        Readlink.style.color=`#464646`;
-    })
-    Write.addEventListener(`mouseover`,function (){
-        Write.style.backgroundColor=`#FF5675`;
-        Writelink.style.backgroundColor=`#FF5675`;
-        Writelink.style.color=`#464646`;
-    })
-    Read.addEventListener(`mouseout`,function (){
-        Read.style.backgroundColor=`#eee8e8`;
-        Readlink.style.backgroundColor=`#eee8e8`;
-        Readlink.style.color=`#464646`;
-    })
-    Write.addEventListener(`mouseout`,function (){
-        Write.style.backgroundColor=`#eee8e8`;
-        Writelink.style.backgroundColor=`#eee8e8`;
-        Writelink.style.color=`#464646`;
-    })
-
-</script>
+&nbsp;
+<div class="링크이동">
+    <h3 id="link">링크 이동</h3>
+    <ul>
+        <li><a href="https://www.naver.com/" a target="_self">네이버</a></li>
+        <li><a href="https://www.google.co.kr/" a target="_self"> 구글</a></li>
+        <!--Blank 새창띄우기-->
+        <li><a href="https://www.bc.ac.kr/home/homeIndex.do" target="_self">부천대학교</a></li>
+    </ul>
+</div>
+&nbsp;
+<div class="소사캠퍼스">
+    <h3 id="sosa">소사캠퍼스</h3>
+    <img src=https://www.bc.ac.kr/common/attachfile/attachfileView.do?attachNo=00014261 width="500" height="500"
+         title=소사캠퍼스>
+    <img src=https://www.bc.ac.kr/common/attachfile/attachfileView.do?attachNo=00012833 width="500" height="500"
+         title=소사캠퍼스>
+</div>
 </body>
+
 </html>

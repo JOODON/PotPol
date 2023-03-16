@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let userPortal=prompt("네이버 다음 구글 중 즐겨 사용하는 사이트는?");
+
+
+        switch (userPortal){
+            case "네이버":
+                location.href="https://www.naver.com/";
+                break;
+            case "구글":
+                location.href="https://www.google.com/?hl=ko";
+                break;
+            case "다음":
+                location.href="https://www.daum.net/";
+                break;
+            default:
+                alert("입력란을 다시 확인해주세요 !");
+                location.reload();
+        }
+    </script>
+</body>
+</html>

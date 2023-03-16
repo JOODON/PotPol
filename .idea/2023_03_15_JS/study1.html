@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let name=prompt("당신의 이름은?");
+        let height=parseInt(prompt("당신의 신장을 입력해주세요 cm 단위로 입력"));
+        let kg=parseInt(prompt("당신의 체중을 입력해주세요"));
+        let averageKg=(height-100)*0.9;
+
+        if(kg <= averageKg + 5 && kg  >= averageKg - 5){
+            document.write(name+"님은 적정 체중 입니다.");
+        }
+
+        else {
+            document.write(name+"님은 적정 체중이 아닙니다.");
+        }
+    </script>
+</body>
+</html>

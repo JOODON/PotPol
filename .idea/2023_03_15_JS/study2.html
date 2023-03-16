@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    let userName="easy1004";
+    let userPw="e11223";
+
+    let inputUserName=prompt("아이디 입력해주세요");
+    let inputUserPassword=prompt("비밀번호를 입력해주세요");
+
+    if (userName==inputUserName && userPw==inputUserPassword){
+        document.write(userName+"님 환영합니다");
+    }
+    else if(userName==inputUserName && userPw !=inputUserPassword){
+        alert("비밀번호가 일치하지 않습니다.");
+        location.reload();
+    }
+    else{
+        alert("해당 아이디가 존재하지 않습니다.");
+        location.reload();
+    }
+  </script>
+</body>
+</html>

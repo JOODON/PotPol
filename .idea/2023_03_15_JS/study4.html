@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>구구단</h2>
+  <script>
+        for (let i=1; i<=9; i++){
+
+            document.write("<div style='display: inline-block; padding: 0 20px 30px 20px; margin: 15px; border: 1px solid gray;'>")
+            document.write("</br>");
+            document.write('<strong style="margin-left:10px;">'+i+"단"+'</strong>');
+            document.write("</br>");
+            document.write("</br>");
+            for (let j=1; j<=9; j++){
+                document.write(i +"x" + j +"=" + i*j);
+
+                document.write("<br>");
+             }
+            document.write("</div>")
+
+        }
+  </script>
+</body>
+</html>
