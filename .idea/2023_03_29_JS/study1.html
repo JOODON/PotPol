@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var input=[];
+        var i=0;
+        do{
+            input[i]=parseInt(prompt("숫자를 입력하세요."));
+
+            let ans=confirm("계속 입력하시겠습니까?");
+            i++;
+            if (!ans) break;
+            if (i == 2)
+                alert("입력이 끝났습니다");
+
+        }while(i<2);
+
+        function power(){
+            if (input.length == 1)
+                return Math.pow(input[0],input[0]);
+            else
+                return Math.pow(input[0],input[1]);
+        }
+
+        var p=power(input);
+
+        document.write(p);
+
+    </script>
+</body>
+</html>

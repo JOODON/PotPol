@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var star=1;
+
+        function starPrint(){
+            for(let i=1; i<=star; i++){
+                document.write("★");
+            }
+            document.write("<br>");
+            star++;
+
+            if(star == 6) return;
+
+            starPrint();
+        }
+
+        function reversePrint() {
+            for(let i=2; i<=star-1; i++){
+                document.write("★");
+            }
+            document.write("<br>");
+            star--;
+
+            if(star == 0) return;
+            reversePrint();
+        }
+
+        starPrint();
+        reversePrint();
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+
+      document.write("합계는" + add());
+
+      function add(){
+          var arr=[];
+          let sum=0;
+          let i=0;
+
+        while (true){
+            let num=parseInt(prompt("수를 입력해 주세요 \n 음수가 나오면 숫자입력 종료"));
+            if (num < 0)
+                break;
+            arr[i]=num;
+            sum+=num;
+            i++;
+        }
+          document.write("입력된 숫자는" + arr);
+          document.write("</br>")
+          return sum;
+      }
+
+  </script>
+</body>
+</html>

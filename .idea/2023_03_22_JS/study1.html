@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let i=1;
+
+        while (true) {
+            alert(i + "번째 방문 입니다");
+            let reload = confirm("계속 하시겠습니까?");
+
+            if (reload==false)
+                break;
+            i++;
+        }
+
+        document.write(i+"번 방문하셨습니다");
+    </script>
+</body>
+</html>
